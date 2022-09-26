@@ -15,6 +15,7 @@
 		3964F64028DB2A2C00DC7342 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F63F28DB2A2C00DC7342 /* HomeView.swift */; };
 		3964F64228DB466700DC7342 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F64128DB466700DC7342 /* TabBar.swift */; };
 		3964F64428DD9DF500DC7342 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F64328DD9DF500DC7342 /* Shapes.swift */; };
+		39A9055E28E1BF0300DB1CB6 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A9055D28E1BF0300DB1CB6 /* WeatherManager.swift */; };
 		39B52EB828E18F4F00646017 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B52EB728E18F4F00646017 /* LocationManager.swift */; };
 		39B52EBA28E1971900646017 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B52EB928E1971900646017 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		3964F63F28DB2A2C00DC7342 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3964F64128DB466700DC7342 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		3964F64328DD9DF500DC7342 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		39A9055D28E1BF0300DB1CB6 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		39B52EB728E18F4F00646017 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		39B52EB928E1971900646017 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				39B52EB728E18F4F00646017 /* LocationManager.swift */,
+				39A9055D28E1BF0300DB1CB6 /* WeatherManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				39B52EB828E18F4F00646017 /* LocationManager.swift in Sources */,
 				3964F62928DB26D800DC7342 /* Hava_DurumuApp.swift in Sources */,
 				39B52EBA28E1971900646017 /* LoadingView.swift in Sources */,
+				39A9055E28E1BF0300DB1CB6 /* WeatherManager.swift in Sources */,
 				3964F64228DB466700DC7342 /* TabBar.swift in Sources */,
 				3964F64428DD9DF500DC7342 /* Shapes.swift in Sources */,
 			);
@@ -363,6 +367,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +397,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

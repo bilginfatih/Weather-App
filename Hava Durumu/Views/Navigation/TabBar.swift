@@ -26,22 +26,29 @@ struct TabBar: View {
             // MARK: Tab Items
             HStack {
                 // MARK: Expand Button
-                Button{
+             /*   Button{
                     action()
                     locationManager.requestLocation()
                     print("fatih")
                 } label: {
                     Image(systemName: "mappin.and.ellipse")
                         .frame(width: 44, height: 44)
-                }
+                }*/
                 
-               /* LocationButton(.shareCurrentLocation) {
+                LocationButton(.shareCurrentLocation) {
                     locationManager.requestLocation()
                 }
-                .cornerRadius(30)
-                .symbolVariant(.fill)
-                .foregroundColor(.none)
-                .preferredColorScheme(.dark)*/
+                 .cornerRadius(30)
+                 .symbolVariant(.fill)
+                 .foregroundColor(.white)
+                 .preferredColorScheme(.dark)
+                 .labelStyle(.iconOnly)
+                 .tint(.black)
+                 .blendMode(.lighten)
+                 
+                
+                
+                
                 
                 Spacer()
                 
@@ -56,6 +63,7 @@ struct TabBar: View {
             .font(.title2)
             .foregroundColor(.white)
             .padding(EdgeInsets(top: 20, leading: 32, bottom: 24, trailing: 32))
+            
         }
         .frame(maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
