@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import CoreLocationUI
 
 struct TabBar: View {
     var action: () -> Void
+    @EnvironmentObject var locationManager: LocationManager
     
     var body: some View {
         ZStack {
@@ -26,11 +28,20 @@ struct TabBar: View {
                 // MARK: Expand Button
                 Button{
                     action()
+                    locationManager.requestLocation()
+                    print("fatih")
                 } label: {
                     Image(systemName: "mappin.and.ellipse")
                         .frame(width: 44, height: 44)
-                        
                 }
+                
+               /* LocationButton(.shareCurrentLocation) {
+                    locationManager.requestLocation()
+                }
+                .cornerRadius(30)
+                .symbolVariant(.fill)
+                .foregroundColor(.none)
+                .preferredColorScheme(.dark)*/
                 
                 Spacer()
                 

@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var locationManager = LocationManager()
+    
     var body: some View {
-        HomeView()
+        VStack {
+            if let location = locationManager.location {
+                Text("Kordinatlar: \(location.longitude),\(location.latitude)")
+            } else {
+                if locationManager.isLoading {
+                    LoadingView()
+                } else {
+                    HomeView()
+                        .environmentObject(locationManager)
+                }
+            }
+                     
+        }
+        .preferredColorScheme(.dark)
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
